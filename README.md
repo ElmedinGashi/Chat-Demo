@@ -3,22 +3,24 @@
 This is a demo of a *Lyro AI chatbot* for a hotel website.  
 It uses a simple HTML/JS widget to provide a chat interface for hotel guests.
 
-## How to view the demo
+## Demo Link
 
-The demo is live on GitHub Pages:  
+The live demo is available on GitHub Pages:  
 [Click here to open the demo](https://ELMEDINGASHI.github.io/hotelchatbotdemo/)
 
-## How to use
+> Note: The "Powered by Lyro Agent" logo has been permanently hidden for this demo.
 
-1. Open index.html in your browser.
+## How to Use
+
+1. Open the demo link in your browser.
 2. The Lyro AI chatbot will load automatically in the widget area.
-3. Chat with the bot to see hotel-specific responses.
+3. Click on the chat icon to start chatting and explore hotel-specific responses.
 
 ## Notes
 
-- Make sure your Lyro AI widget link in index.html is correct.
-- The widget should be placed just before the closing </body> tag.
-- This project is for demo purposes.
+- Ensure the Lyro AI widget script URL in index.html is correct.
+- The chat widget is embedded in the <div id="lyro-widget"></div> container.
+- This project is intended for demonstration purposes only.
 
 ## Author
 
