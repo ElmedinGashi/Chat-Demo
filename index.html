@@ -4,12 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel Chatbot Demo</title>
+
+  <!-- CSS that permanently hides the Powered by Lyro Agent logo -->
+  <style>
+    /* Replace #lyro-badge with the actual ID or class if different */
+    #lyro-badge {
+      display: none !important;
+    }
+  </style>
 </head>
 <body>
-  <!-- Lyro AI Widget will go here -->
+  <!-- Container where the Lyro AI widget will appear -->
   <div id="lyro-widget"></div>
 
-  <!-- Insert the Lyro embed script here -->
+  <!-- Embed Lyro/Tidio widget -->
   <script src="https://code.tidio.co/52qv16mseylylje5h3fa7v8puhblryuj.js" async></script>
+
+  <!-- JS fallback to hide the logo if dynamically generated -->
+  <script>
+    window.addEventListener('load', () => {
+      const el = Array.from(document.querySelectorAll('div, span'))
+        .find(e => e.textContent.includes('Powered by Lyro Agent'));
+      if (el) el.style.display = 'none';
+    });
+  </script>
 </body>
 </html>
